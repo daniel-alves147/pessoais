@@ -13,9 +13,10 @@ public class Core {
         ArrayList<Linha> lista = arrayList;
         for (Linha linha : lista) {
             if (linha != null) {
-                if (linha.getContribuinte().toUpperCase().contains("X")) {
-                    String valor = linha.getContribuinte().toUpperCase().replace("X", "");
-                    linha.setContribuinte(valor);
+                if (linha.getInscricao().toUpperCase().contains("X")) {
+                    String valor = linha.getInscricao().toUpperCase().replace("X", "");
+                    
+                    linha.setInscricao(valor);
                 }
             }
         }
@@ -28,8 +29,8 @@ public class Core {
                 +  "527144           20140420140514CORREÇÃO MONETÁRIA ref Apuração 38640 período 4 ano 2014    00000000027992014052600111305010050044453";
         for (Linha linha : lista) {
             if(linha != null){
-                if(linha.getDocumentoContribuinte() != null &&
-                   linha.getContribuinte() != null &&
+                if(linha.getMesAno() != null &&
+                   linha.getInscricao() != null &&
                    linha.getGuia() != null){
                     if(linha.getTipoLinha().equals("51")){
                         

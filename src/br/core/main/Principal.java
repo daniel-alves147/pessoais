@@ -155,7 +155,7 @@ public class Principal extends javax.swing.JFrame {
     private void btnCorrigirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCorrigirActionPerformed
         ArrayList<Linha> lista = new ArrayList<>();
         Linha linha = new Linha();
-        linha.setContribuinte("x12345");
+        linha.setInscricao("x12345");
         lista.add(linha);
         core.step1(lista);
     }//GEN-LAST:event_btnCorrigirActionPerformed

@@ -6,8 +6,8 @@ package br.core.model;
 public class Linha {
     
     private String tipoLinha;
-    private String contribuinte;
-    private String documentoContribuinte;
+    private String inscricao;
+    private String mesAno;
     private String guia;
     private String valorGuia;
     private String vencimento;
@@ -21,20 +21,20 @@ public class Linha {
         this.tipoLinha = tipoLinha;
     }
 
-    public String getContribuinte() {
-        return contribuinte;
+    public String getInscricao() {
+        return inscricao;
     }
 
-    public void setContribuinte(String contribuinte) {
-        this.contribuinte = contribuinte;
+    public void setInscricao(String inscricao) {
+        this.inscricao = inscricao;
     }
 
-    public String getDocumentoContribuinte() {
-        return documentoContribuinte;
+    public String getMesAno() {
+        return mesAno;
     }
 
-    public void setDocumentoContribuinte(String documentoContribuinte) {
-        this.documentoContribuinte = documentoContribuinte;
+    public void setMesAno(String mesAno) {
+        this.mesAno = mesAno;
     }
 
     public String getGuia() {
